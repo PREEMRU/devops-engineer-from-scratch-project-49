@@ -8,9 +8,9 @@ from brain_games.cli import welcome_user
 def is_even():
     number = randrange(0, 100)
     if number % 2 == 0:
-        even = "yes"
+        even = True
     else:
-        even = "no"
+        even = False
     return number, even
 
 
@@ -24,6 +24,11 @@ def main():
 
         print(f"Question: {number}")
         answer = prompt.string("Your answer: ")
+
+        if even == True:
+            even = 'yes'
+        else:
+            even = 'no'
 
         if answer == even:
             print("Correct!")
