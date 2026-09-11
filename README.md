@@ -1,3 +1,11 @@
+## 🎮 Игровой процесс (Demo)
+
+Посмотрите короткую демонстрацию игрового процесса (победа и поражение игрока):
+
+[![asciicast](https://asciinema.org)](https://asciinema.org/a/u3qGV38LYREkBLMo)
+
+_Нажмите на плеер выше, чтобы открыть интерактивную версию с возможностью копирования текста._
+
 # Игры разума (Python)
 
 [![hexlet-check](https://github.com/PREEMRU/devops-engineer-from-scratch-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/PREEMRU/devops-engineer-from-scratch-project-49/actions)
