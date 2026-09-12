@@ -1,46 +1,18 @@
 from random import randrange
 
-import prompt
+from brain_games.scripts.engine import engine
 
-from brain_games.cli import welcome_user
+DESC = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even():
-    number = randrange(0, 100)
-    if number % 2 == 0:
-        even = True
-    else:
-        even = False
-    return number, even
+    numbers = randrange(0, 100)
+    r_answer = 'yes' if numbers % 2 == 0 else 'no'
+    return numbers, r_answer
 
 
 def main():
-    name = welcome_user()
-    print(f'Hello, {name}!')
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-
-    for i in range(3):
-        number, even = is_even()
-
-        print(f"Question: {number}")
-        answer = prompt.string("Your answer: ")
-
-        if even == True:
-            even = 'yes'
-        else:
-            even = 'no'
-
-        if answer == even:
-            print("Correct!")
-            if i == 2:
-                print(f"Congratulations, {name}!")
-        else:
-            print(
-                f"'{answer}' is wrong answer ;(. "
-                f"Correct answer was '{even}'."
-            )
-            print(f"Let's try again, {name}!")
-            break
+    engine(is_even, DESC)
 
 
 if __name__ == "__main__":

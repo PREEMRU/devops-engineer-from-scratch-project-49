@@ -1,10 +1,16 @@
 ## 🎮 Игровой процесс (Demo)
 
-Посмотрите короткую демонстрацию игрового процесса (победа и поражение игрока):
+Посмотрите демонстрации игрового процесса: победа и поражение игрока.
 
-[![asciicast](https://asciinema.org)](https://asciinema.org/a/u3qGV38LYREkBLMo)
+### Проверка на чётность (Brain Even)
 
-_Нажмите на плеер выше, чтобы открыть интерактивную версию с возможностью копирования текста._
+[![Brain Even](https://asciinema.org/a/u3qGV38LYREkBLMo.svg)](https://asciinema.org/a/u3qGV38LYREkBLMo)
+
+### Калькулятор (Brain Calc)
+
+[![Brain Calc](https://asciinema.org/a/Colx6AROnNtYBKil.svg)](https://asciinema.org/a/Colx6AROnNtYBKil)
+
+_Нажмите на превью, чтобы открыть интерактивную запись с возможностью копирования текста._
 
 # Игры разума (Python)
 
