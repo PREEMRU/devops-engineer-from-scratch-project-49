@@ -18,6 +18,9 @@
 
 [![Brain Progression](https://asciinema.org/a/CKOBVNDpNiCCQ7cz.svg)](https://asciinema.org/a/CKOBVNDpNiCCQ7cz)
 
+### Простые числа (Brain Prime)
+
+[![Brain Prime](https://asciinema.org/a/j6l2AgRQ2xEquQ1w.svg)](https://asciinema.org/a/j6l2AgRQ2xEquQ1w)
 
 _Нажмите на превью, чтобы открыть интерактивную запись с возможностью копирования текста._
 
