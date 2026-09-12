@@ -14,6 +14,11 @@
 
 [![Brain GCD](https://asciinema.org/a/rLOLPqosBfYm3wWj.svg)](https://asciinema.org/a/rLOLPqosBfYm3wWj)
 
+### Арифметическая прогрессия (Brain Progression)
+
+[![Brain Progression](https://asciinema.org/a/CKOBVNDpNiCCQ7cz.svg)](https://asciinema.org/a/CKOBVNDpNiCCQ7cz)
+
+
 _Нажмите на превью, чтобы открыть интерактивную запись с возможностью копирования текста._
 
 # Игры разума (Python)
