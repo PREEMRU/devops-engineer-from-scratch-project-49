@@ -10,6 +10,10 @@
 
 [![Brain Calc](https://asciinema.org/a/Colx6AROnNtYBKil.svg)](https://asciinema.org/a/Colx6AROnNtYBKil)
 
+### Наибольший общий делитель (Brain GCD)
+
+[![Brain GCD](https://asciinema.org/a/rLOLPqosBfYm3wWj.svg)](https://asciinema.org/a/rLOLPqosBfYm3wWj)
+
 _Нажмите на превью, чтобы открыть интерактивную запись с возможностью копирования текста._
 
 # Игры разума (Python)
