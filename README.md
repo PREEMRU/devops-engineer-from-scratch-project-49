@@ -104,44 +104,59 @@ brain-gcd
 brain-progression
 ```
 
-Простые числа
+[![Демонстрация Brain Progression](https://asciinema.org/a/CKOBVNDpNiCCQ7cz.svg)](https://asciinema.org/a/CKOBVNDpNiCCQ7cz)
 
-Ответьте yes, если число простое, и no в остальных случаях. Простое число — целое число больше единицы, имеющее ровно два положительных делителя: единицу и само себя.
+### Простые числа
 
+Ответьте `yes`, если число простое, и `no` в остальных случаях. Простое число — целое число больше единицы, имеющее ровно два положительных делителя: единицу и само себя.
+
+```bash
 brain-prime
+```
 
+[![Демонстрация Brain Prime](https://asciinema.org/a/j6l2AgRQ2xEquQ1w.svg)](https://asciinema.org/a/j6l2AgRQ2xEquQ1w)
 
-
-
-Разработка
+## Разработка
 
 Установка зависимостей:
 
+```bash
 make install
+```
 
 Проверка кода линтером Ruff:
 
+```bash
 make lint
+```
 
 Сборка пакета:
 
+```bash
 make build
+```
 
 Установка собранного пакета:
 
+```bash
 make package-install
+```
 
-Для запуска игры из исходного кода без установки через uv tool install:
+Для запуска игры из исходного кода без установки через `uv tool install`:
 
+```bash
 uv run brain-calc
+```
 
 После изменения исходного кода для обновления установленного приложения:
 
+```bash
 uv build
 uv tool install --force dist/*.whl
-Автоматическая проверка
+```
 
-При отправке изменений в GitHub запускается workflow hexlet-check.
+## Автоматическая проверка
 
-Статус и результаты проверки доступны на вкладке Actions.
+При отправке изменений в GitHub запускается workflow `hexlet-check`.
 
+Статус и результаты проверки доступны на вкладке [Actions](https://github.com/PREEMRU/devops-engineer-from-scratch-project-49/actions).
