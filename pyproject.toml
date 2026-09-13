@@ -1,7 +1,10 @@
 [project]
 name = "hexlet-code"
 version = "0.7.0"
-description = "Add your description here"
+description = "Five console math games"
+authors = [
+	{ name = "Kirill Koshenkov" },
+]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [

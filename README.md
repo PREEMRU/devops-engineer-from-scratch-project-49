@@ -1,64 +1,147 @@
-## 🎮 Игровой процесс (Demo)
+# Игры разума
 
-Посмотрите демонстрации игрового процесса: победа и поражение игрока.
+[![hexlet-check](https://github.com/PREEMRU/devops-engineer-from-scratch-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/PREEMRU/devops-engineer-from-scratch-project-49/actions/workflows/hexlet-check.yml)
 
-### Проверка на чётность (Brain Even)
+Учебный проект Хекслета: пять консольных математических игр на Python.
 
-[![Brain Even](https://asciinema.org/a/u3qGV38LYREkBLMo.svg)](https://asciinema.org/a/u3qGV38LYREkBLMo)
+В каждой игре необходимо правильно ответить на три вопроса подряд. После неправильного ответа игра завершается и показывает правильный ответ.
 
-### Калькулятор (Brain Calc)
+## Минимальные требования
 
-[![Brain Calc](https://asciinema.org/a/Colx6AROnNtYBKil.svg)](https://asciinema.org/a/Colx6AROnNtYBKil)
-
-### Наибольший общий делитель (Brain GCD)
-
-[![Brain GCD](https://asciinema.org/a/rLOLPqosBfYm3wWj.svg)](https://asciinema.org/a/rLOLPqosBfYm3wWj)
-
-### Арифметическая прогрессия (Brain Progression)
-
-[![Brain Progression](https://asciinema.org/a/CKOBVNDpNiCCQ7cz.svg)](https://asciinema.org/a/CKOBVNDpNiCCQ7cz)
-
-### Простые числа (Brain Prime)
-
-[![Brain Prime](https://asciinema.org/a/j6l2AgRQ2xEquQ1w.svg)](https://asciinema.org/a/j6l2AgRQ2xEquQ1w)
-
-_Нажмите на превью, чтобы открыть интерактивную запись с возможностью копирования текста._
-
-# Игры разума (Python)
-
-[![hexlet-check](https://github.com/PREEMRU/devops-engineer-from-scratch-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/PREEMRU/devops-engineer-from-scratch-project-49/actions)
-
-Погрузитесь в экосистему Python и научитесь настраивать рабочее окружение. Подружитесь с менеджером зависимостей и линтером. Поймете, чем git отличается от GitHub, поработаете с внешними репозиториями. Получите опыт построения архитектуры полноценного приложения и написания чистого кода.
-
-Учебный проект Хекслета: https://ru.hexlet.io/programs/devops-engineer-from-scratch
-Как это должно работать: https://asciinema.org/a/l40Lrk3midkLmNEOmgZErGnY7
-
-## Стек
-
-- Python
+* Python 3.12 или выше.
+* Менеджер пакетов [uv](https://docs.astral.sh/uv/getting-started/installation/).
+* Git для клонирования репозитория.
+* Make — для использования сокращённых команд разработки (необязательно).
 
 ## Установка
 
-<!-- Опишите установку: клонирование, зависимости, переменные окружения -->
+Клонируйте репозиторий и перейдите в директорию проекта:
 
 ```bash
 git clone https://github.com/PREEMRU/devops-engineer-from-scratch-project-49.git
 cd devops-engineer-from-scratch-project-49
 ```
 
-## Использование
+Установите зависимости и соберите пакет:
 
-<!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
+```bash
+uv sync
+uv build
+```
 
----
+Установите приложение:
 
-<details>
-<summary>Автоматические тесты Хекслета</summary>
+```bash
+uv tool install dist/*.whl
+```
 
-Тесты запускаются на каждый коммит. За запуск отвечает файл `.github/workflows/hexlet-check.yml` — не удаляйте и не переименовывайте ни его, ни репозиторий.
+Если команды приложения не найдены, обновите настройки PATH:
 
-</details>
+```bash
+uv tool update-shell
+```
 
-## О Хекслете
+После этого перезапустите терминал.
 
-[Хекслет](https://ru.hexlet.io/) — школа программирования: авторские программы обучения с практикой, поддержкой наставников и реальными проектами, которые остаются в резюме. Этот репозиторий — один из таких проектов.
+## Запуск
+
+После установки команды доступны из любой директории без `uv run`.
+
+| Команда             | Описание                               |
+| ------------------- | -------------------------------------- |
+| `brain-games`       | Приветствие и знакомство с игроком     |
+| `brain-even`        | Проверка числа на чётность             |
+| `brain-calc`        | Вычисление значения выражения          |
+| `brain-gcd`         | Нахождение наибольшего общего делителя |
+| `brain-progression` | Поиск пропущенного числа в прогрессии  |
+| `brain-prime`       | Проверка числа на простоту             |
+
+Например, для запуска калькулятора:
+
+```bash
+brain-calc
+```
+
+Введите своё имя, затем отвечайте на вопросы игры.
+
+## Правила игр и демонстрации
+
+### Проверка на чётность
+
+Ответьте `yes`, если показанное число чётное, и `no`, если нечётное.
+
+```bash
+brain-even
+```
+
+[![Демонстрация Brain Even](https://asciinema.org/a/u3qGV38LYREkBLMo.svg)](https://asciinema.org/a/u3qGV38LYREkBLMo)
+
+### Калькулятор
+
+Вычислите значение выражения и введите ответ. В игре используются сложение, вычитание и умножение.
+
+```bash
+brain-calc
+```
+
+[![Демонстрация Brain Calc](https://asciinema.org/a/Colx6AROnNtYBKil.svg)](https://asciinema.org/a/Colx6AROnNtYBKil)
+
+### Наибольший общий делитель
+
+Найдите наибольший общий делитель двух показанных чисел.
+
+```bash
+brain-gcd
+```
+
+[![Демонстрация Brain GCD](https://asciinema.org/a/rLOLPqosBfYm3wWj.svg)](https://asciinema.org/a/rLOLPqosBfYm3wWj)
+
+### Арифметическая прогрессия
+
+Найдите число, заменённое двумя точками `..`, и введите его.
+
+```bash
+brain-progression
+```
+
+Простые числа
+
+Ответьте yes, если число простое, и no в остальных случаях. Простое число — целое число больше единицы, имеющее ровно два положительных делителя: единицу и само себя.
+
+brain-prime
+
+
+
+
+Разработка
+
+Установка зависимостей:
+
+make install
+
+Проверка кода линтером Ruff:
+
+make lint
+
+Сборка пакета:
+
+make build
+
+Установка собранного пакета:
+
+make package-install
+
+Для запуска игры из исходного кода без установки через uv tool install:
+
+uv run brain-calc
+
+После изменения исходного кода для обновления установленного приложения:
+
+uv build
+uv tool install --force dist/*.whl
+Автоматическая проверка
+
+При отправке изменений в GitHub запускается workflow hexlet-check.
+
+Статус и результаты проверки доступны на вкладке Actions.
+
