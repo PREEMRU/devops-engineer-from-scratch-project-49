@@ -1,18 +1,9 @@
-from random import randrange
-
-from brain_games.scripts.engine import engine
-
-DESC = 'Answer "yes" if the number is even, otherwise answer "no".'
-
-
-def is_even():
-    numbers = randrange(0, 101)
-    r_answer = 'yes' if numbers % 2 == 0 else 'no'
-    return numbers, r_answer
+from brain_games.engine import engine
+from brain_games.games import even
 
 
 def main():
-    engine(is_even, DESC)
+    engine(even.is_even, even.DESC)
 
 
 if __name__ == "__main__":
