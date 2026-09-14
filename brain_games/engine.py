@@ -2,27 +2,28 @@ import prompt
 
 from brain_games.cli import welcome_user
 
+ROUNDS_COUNT = 3
 
-def engine(func, desc):
+
+def engine(game):
     name = welcome_user()
-    print(f'Hello, {name}!')
+    print(f"Hello, {name}!")
+    print(game.DESC)
 
-    print(desc)
-
-    for i in range(3):
-        question, r_answer = func()
+    for _ in range(ROUNDS_COUNT):
+        question, correct_answer = game.get_question_and_right_answer()
 
         print(f"Question: {question}")
         answer = prompt.string("Your answer: ")
 
-        if answer == r_answer:
-            print("Correct!")
-            if i == 2:
-                print(f"Congratulations, {name}!")
-        else:
+        if answer != correct_answer:
             print(
                 f"'{answer}' is wrong answer ;(. "
-                f"Correct answer was '{r_answer}'."
+                f"Correct answer was '{correct_answer}'."
             )
             print(f"Let's try again, {name}!")
-            break
+            return
+
+        print("Correct!")
+
+    print(f"Congratulations, {name}!")

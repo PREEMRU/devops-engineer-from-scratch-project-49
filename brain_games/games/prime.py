@@ -3,7 +3,7 @@ from random import randrange
 DESC = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime():
+def get_question_and_right_answer():
     numbers = randrange(0, 101)
     prime = True
 
